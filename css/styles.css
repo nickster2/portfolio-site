@@ -98,14 +98,14 @@ body {
 }
 
 .contact-info {
-text-align: center;
+  text-align: center;
 }
 
 h1 {
   font-size: 30px;
   line-height: 1.2;
   font-weight: var(--bold);
-  color: #214521;
+  color: var(--primary-color);
 }
 
 h2 {
