@@ -214,7 +214,7 @@ button,
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 20px;
     margin: 0;
   }
 }
@@ -227,14 +227,12 @@ button,
   text-align: center;
   transition: transform 0.3s ease;
   border-radius: 10px; /* Rounded corners */
-  padding: 10px; /* Add padding to create space around grid items */
+  padding: 20px; /* Add padding to create space around grid items */
   cursor: pointer; /* Change cursor to pointer */
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .grid__item:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 
 .grid__item:last-child {
