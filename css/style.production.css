@@ -2,7 +2,7 @@
 * Prefixed by https://autoprefixer.github.io
 * PostCSS: v8.4.14,
 * Autoprefixer: v10.4.7
-* Browsers: last 4 versions
+* Browsers: last 2 version
 */
 
 /*
@@ -14,15 +14,25 @@ Green: #214521, Taupe: #9b9692, Sand: #c5bdb7, Cream: #dfd8d3
 Primary Color (Green): #214521;
 Secondary Color (Mint): #489c79;
  */
+:root {
+  --text-color: #182f18;
+  --background-color: #dfd8d3;
+  --background-color-darker: #9b9692;
+  --primary-color: #214521;
+  --secondary-color: #489c79;
+  --body-font: 16px;
+  --bold: 700;
+  --normal: 400;
+}
 
 body {
-  background-color: #dfd8d3;
+  background-color: var(--background-color);
   font-family: 'Poetsen One', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: var(--normal);
+  font-size: var(--body-font);
   line-height: 1.6;
   font-style: normal;
-  color: #182f18;
+  color: var(--text-color);
 }
 
 .page-header {
@@ -31,7 +41,7 @@ body {
   display: flex;
   width: 100%;
   padding: 20px;
-  border-bottom: 2px solid #182f18;
+  border-bottom: 2px solid var(--text-color);
 }
 
 .page-footer {
@@ -67,8 +77,8 @@ body {
 
 .page-header__item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 400px;
-  flex: 0 1 400px;
+  -ms-flex: 0 1 300px;
+  flex: 0 1 300px;
   width: 100%;
   padding: 20px;
 }
@@ -94,40 +104,52 @@ body {
   text-align: center;
 }
 
+.about-list {
+  padding: 0;
+}
+
 .about-list__item {
   list-style-type: none;
+}
+
+.about-me {
+  text-align: center;
+}
+
+.contact-info {
+  text-align: center;
 }
 
 h1 {
   font-size: 30px;
   line-height: 1.2;
-  font-weight: 700;
-  color: #214521;
+  font-weight: var(--bold);
+  color: var(--primary-color);
 }
 
 h2 {
   font-size: 24px;
   line-height: 1.2;
-  font-weight: 700;
-  color: #214521;
+  font-weight: var(--bold);
+  color: var(--primary-color);
 }
 
 h3 {
   font-size: 18px;
   line-height: 1.2;
-  font-weight: 700;
-  color: #214521;
+  font-weight: var(--bold);
+  color: var(--primary-color);
 }
 
 p {
-  font-size: 16px;
+  font-size: var(--body-font);
   line-height: 2;
-  font-weight: 400;
-  color: #214521;
+  font-weight: var(--normal);
+  color: var(--primary-color);
 }
 
 a {
-  color: #214521;
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -143,50 +165,40 @@ a:hover {
 
 a:active {
   /* selected link */
-  color: #489c79;
+  color: var(--secondary-color);
 }
 
 a:focus {
-  outline: 2px solid #489c79;
+  outline: 2px solid var(--secondary-color);
   text-decoration: none;
 }
 
 button {
-  background-color: #dfd8d3;
+  background-color: var(--background-color);
   border: none;
   border-radius: 3px;
-  border-bottom: 2px solid #182f18;
+  border-bottom: 2px solid var(--text-color);
   color: white;
-  font-size: 16px;
+  font-size: var(--body-font);
   font-family: inherit;
   padding: 10px;
   margin-bottom: 10px;
 }
 
-button:hover {
-  background-color: #9b9692;
-  cursor: pointer;
-  opacity: 0.8;
-}
-
+button:hover,
 .button:hover {
-  background-color: #9b9692;
+  background-color: var(--background-color-darker);
   cursor: pointer;
   opacity: 0.8;
 }
 
 button:active {
-  background-color: #182f18;
+  background-color: var(--text-color);
 }
 
-button:focus {
-  border: 2px solid #489c79;
-  cursor: pointer;
-  opacity: 0.8;
-}
-
+button:focus,
 .button:focus {
-  border: 2px solid #489c79;
+  border: 2px solid var(--secondary-color);
   cursor: pointer;
   opacity: 0.8;
 }
@@ -196,20 +208,7 @@ button:focus {
   color: #2b2b2b;
 }
 
-button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: #c2bcb8;
-  color: white;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #182f18;
-  -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-}
-
+button,
 .button {
   border: none;
   display: inline-block;
@@ -218,9 +217,8 @@ button {
   color: white;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #182f18;
+  border-bottom: 2px solid var(--text-color);
   -webkit-transition: 0.2s;
-  -o-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -240,31 +238,33 @@ button {
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-gap: 10px;
     margin: 0;
   }
 }
 
 .grid__item {
-  background-color: #dfd8d3;
+  background-color: var(--background-color-darker);
   width: auto;
   min-height: auto;
   margin: 0;
   text-align: center;
   -webkit-transition: -webkit-transform 0.3s ease;
-  -o-transition: transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   border-radius: 10px; /* Rounded corners */
-  padding: 20px; /* Add padding to create space around grid items */
+  padding: 10px; /* Add padding to create space around grid items */
   cursor: pointer; /* Change cursor to pointer */
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .grid__item:hover {
-  -webkit-transform: scale(1.04);
-  -ms-transform: scale(1.04);
-  transform: scale(1.04);
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .grid__item:last-child {
