@@ -1,56 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <title>About - Nicholas Gould</title>
-</head>
-<body>
-    <header class="page-header">
-        <!--ADD LOGO USING RECRAFT.AI-->
-        <img src="img/nicholasgould.svg" alt="logo" class="page-header__item">
-        <nav class="main-navigation page-header__item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem"
-                        class="navigation-list__item navigation-list__item--active">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About</a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                </li>
-                <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Projects</a>
-                </li>
-            </ul>
-        </nav>
-    
-    </header>
-<div class="about-info">
-    <h1>About Me</h1>
-    <p>I am a motivated and driven father who loves:</p>
-    <ul role="menubar" class="about-list">
-        <li class="about-list__item">Family Time</li>
-        <li class="about-list__item">Marvel Movies</li>
-        <li class="about-list__item">JDM Cars</li>
-        <li class="about-list__item">Video Games</li>
-    </ul>
-    <a href="https://www.linkedin.com/in/nick-gould-ba156b259" class="button" target="blank" download>Download my CV</a>
-</div>
-<div>
-<!--<?xml version="1.0" encoding="utf-8"?> -->
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.5.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1000 500" style="enable-background:new 0 0 1000 500;" xml:space="preserve">
 <g id="BACKGROUND">
-	<rect style="fill:#dfd8d3;" width="1000" height="500"/>
+	<rect style="fill:#FFFFFF;" width="1000" height="500"/>
 </g>
 <g id="OBJECTS">
 	<g>
@@ -82,7 +35,7 @@
 			<rect x="270.564" y="258.956" style="fill:#2F2F3F;" width="25.706" height="94.068"/>
 			<rect x="143.561" y="195.56" style="fill:#6A6A93;" width="29.771" height="157.463"/>
 			
-			<rect x="173.333" y="215.174" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 350.1675 568.1975)" style="fill:#6A6A93;" width="3.503" height="137.849"/>
+				<rect x="173.333" y="215.174" transform="matrix(-1 -1.224647e-16 1.224647e-16 -1 350.1675 568.1975)" style="fill:#6A6A93;" width="3.503" height="137.849"/>
 			<rect x="132.957" y="276.424" style="fill:#2F2F3F;" width="25.665" height="76.599"/>
 			<rect x="122.287" y="331.755" width="31.51" height="21.268"/>
 			<polygon points="153.798,331.755 122.287,331.755 126.953,324.604 149.131,324.604 			"/>
@@ -330,11 +283,11 @@
 				c18.102,0.29,36.203,0.468,54.304,0.85l54.304,1.122l54.304,1.522l27.152,0.771l27.152,1.021v0.8L500,353.822l-434.435-0.399
 				V352.623z"/>
 		</g>
-		<lineargradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="500" y1="476.7883" x2="500" y2="353.0232">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="500" y1="476.7883" x2="500" y2="353.0232">
 			<stop  offset="0.0212" style="stop-color:#FFFFFF"/>
 			<stop  offset="0.8598" style="stop-color:#FFFFFF;stop-opacity:0.1432"/>
 			<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0"/>
-		</lineargradient>
+		</linearGradient>
 		<rect x="65.565" y="353.023" style="fill:url(#SVGID_1_);" width="868.87" height="123.765"/>
 	</g>
 </g>
@@ -345,61 +298,3 @@
 	</g>
 </g>
 </svg>
-</div>
-
-<div class="about-me">
-    <h2>How I started my coding journey</h2>
-    <p>I love building computers and understanding how they operate.</p>
-    <p>My curiousity grew as I began inspecting webpages and being</p>
-    <p>amazed at the operating languages behind the World Wide Web.</p>
-    <p>I then started messing around with some python scripts that I</p>
-    <p>would test on cloud servers and my interest peeked from there.</p>
-    <p>I started my CareerFoundry course in April of 2024 and I plan</p>
-    <p>to continue strenghting my toolkit furthermore.</p>
-</div>
-<footer class="page-footer">
-    <table>
-        <thead>
-            <tr>
-                <td>Skills</td>
-                <td>Months of Experience</td>
-                <td>Level of Expertise</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>HTML</td>
-                <td>2</td>
-                <td>Beginner</td>
-            </tr>
-            <tr>
-                <td>CSS</td>
-                <td>2</td>
-                <td>Beginner</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>0</td>
-                <td>Beginner</td>
-            </tr>
-        </tbody>
-    </table>
-        <p>Find me on</p>
-     <div class="social-media">
-        <a href="https://www.linkedin.com/in/nicholasegould" target="blank">
-            <img src="img/linkedin_icon.svg" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/nickster2" target="blank">
-            <img src="img/github_icon.svg" alt="Github">
-        </a>
-        <a href="https://twitter.com" target="blank">
-            <img src="img/twitter_icon.svg" alt="Twitter">
-        </a>
-     </div>
-</footer>
-
-    <script src="js/tota11y.min.js"></script>
-</body>
-
-
-</html>

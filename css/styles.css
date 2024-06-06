@@ -42,6 +42,7 @@ body {
   margin-top: 25px;
   clear: both;
   padding: 10px;
+  color: var(--text-color);
 }
 
 .profile__portrait {
@@ -64,11 +65,21 @@ body {
   flex: 0 1 300px;
   width: 100%;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .page-header__item:last-child {
   flex-grow: 1;
   text-align: right;
+}
+
+.highlight {
+  background-color: #2b2b2b;
+  color: #f00;
+  padding: 2px;
+  box-sizing: border-box;
+  margin-left: 3px;
+  margin-right: 5px;
 }
 
 .navigation-list {
@@ -287,7 +298,7 @@ button,
   }
 }
 
-@keyframes color-change {
+/* @keyframes color-change {
   0% {
     fill: #edc655;
   }
@@ -331,4 +342,4 @@ button,
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
+} */
