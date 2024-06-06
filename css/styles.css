@@ -73,6 +73,15 @@ body {
   text-align: right;
 }
 
+.highlight {
+  background-color: #2b2b2b;
+  color: #f00;
+  padding: 2px;
+  box-sizing: border-box;
+  margin-left: 3px;
+  margin-right: 5px;
+}
+
 .navigation-list {
   list-style-type: none;
 }
@@ -289,7 +298,7 @@ button,
   }
 }
 
-@keyframes color-change {
+/* @keyframes color-change {
   0% {
     fill: #edc655;
   }
@@ -333,4 +342,4 @@ button,
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
+} */
