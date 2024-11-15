@@ -56,6 +56,7 @@ body {
   margin-top: 25px;
   clear: both;
   padding: 10px;
+  color: var(--text-color);
 }
 
 .profile__portrait {
@@ -81,6 +82,8 @@ body {
   flex: 0 1 300px;
   width: 100%;
   padding: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .page-header__item:last-child {
@@ -88,6 +91,16 @@ body {
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: right;
+}
+
+.highlight {
+  background-color: #2b2b2b;
+  color: #f00;
+  padding: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-left: 3px;
+  margin-right: 5px;
 }
 
 .navigation-list {
@@ -319,21 +332,7 @@ button,
   }
 }
 
-@-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-@keyframes color-change {
+/* @keyframes color-change {
   0% {
     fill: #edc655;
   }
@@ -348,64 +347,33 @@ button,
 }
 
 .sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
   animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
-  from {
-    -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
-  }
 }
 
 @keyframes cloud-move {
   from {
-    -webkit-transform: translate(0, 50px);
     transform: translate(0, 50px);
   }
 
   to {
-    -webkit-transform: translate(200px, 50px);
     transform: translate(200px, 50px);
-  }
-}
-
-@-webkit-keyframes cloud-move-reverse {
-  from {
-    -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
-    -webkit-transform: translate(446px, 48px);
     transform: translate(446px, 48px);
   }
 
   to {
-    -webkit-transform: translate(100px, 48px);
     transform: translate(100px, 48px);
   }
 }
 
 .cloud-front {
-  -webkit-animation: 30s cloud-move infinite alternate linear;
   animation: 30s cloud-move infinite alternate linear;
 }
 
 .cloud-back {
-  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
   animation: 34s cloud-move-reverse infinite alternate linear;
-}
+} */
