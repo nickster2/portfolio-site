@@ -34,20 +34,34 @@
         </nav>
     </header>
 
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1>Contact</h1>
+            <div>
+                CareerFoundry Graduate <br>
+                PO BOX 12345 Cheney, WA 99004 <br>
+                USA <br>
+                <a href="tel:+17071234567">+17071234567</a><br>
+                <a href="https://www.linkedin.com/in/nick-gould-ba156b259">LinkedIn</a>
+                <br>
+                <a href="mailto:gouldnick125@gmail.com">gouldnick125@gmail.com</a>
+                <br>
+                <a href="mailto:gouldnick125@gmail.com">Contact Me</a>
+            </div>
 
-</header>
-<div class="contact-info">
-    <h1>Contact</h1>
-    <div>
-        CareerFoundry Graduate <br>
-        PO BOX 12345 Cheney, WA 99004 <br>
-        USA <br>
-        <a href="tel:+17071234567">+17071234567</a><br>
-        <a href="https://www.linkedin.com/in/nick-gould-ba156b259">LinkedIn</a>
-        <br>
-        <a href="mailto:gouldnick125@gmail.com">gouldnick125@gmail.com</a>
-        <br>
-        <a href="mailto:gouldnick125@gmail.com">Contact Me</a>
+            <div class="contact-form">
+                <form action="#" method="post" id="contact-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="user@example.com" minlength="9" required>
+                    <br />
+                    <label for="fname" required>First Name:</label>
+                    <input type="text" id="fname">
+                    <br />
+                    <label for="lname" required>Last Name:</label>
+                    <input type="text" id="lname">
+
+                    <label for="phone-number">Telephone:</label>
+                    <input type="tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" id="phone-number">
 
                     <label for="message">Message:</label>
                     <textarea maxlength="200" id="message" required></textarea>
